@@ -1,0 +1,119 @@
+<DOCTYPE html>
+    <html lang = "pt-br">
+
+        <head>
+
+            <meta charset = "UTF-8">
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+            <title>Casa de câmbio Muito Dinheiro</title>
+
+            <link rel = "stylesheet" href = "reset.css">
+            <link rel = "stylesheet" href = "style.css">
+
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">   
+            
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Train+One&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+
+            <header>
+                <ul class = "logo">
+                    <li id = "titulo"><h1><a href = "/" >MUITO DINHEIRO</a></h1></li>
+                    <li id = "subtitulo">Casa de câmbio</li>
+                </ul>
+            </header>
+
+            <main>
+                
+                <fieldset class = "valor-entrada">
+
+                    <label for = "input-entrada">Valor</label>
+                    <input id = "input-entrada"class = "input-padrao" type = "number" placeholder = "10.00" data-input>
+                </fieldset>
+
+                <div class = "menu-conversor">
+
+                    <fieldset class = "moeda-origem">
+
+                        <label for = "moedaentrada">Moeda de origem</label>
+                        <select class = "selecao-padrao" id = "moedaentrada" data-unidade-entrada></select>
+                    </fieldset>
+
+                    <button id = "botao-inverter" data-button-inverter>&#128472;</button>
+
+                    <fieldset class = "moeda-destino">
+
+                        <label for = "moedasaida">Moeda de destino</label>
+                        <select class = "selecao-padrao" id = "moedasaida" data-unidade-saida></select> 
+                    </fieldset>
+                </div>
+
+                    <fieldset class = "custos">
+
+                        <label for = "taxa">Taxa de serviço (R$)</label>
+                        <output type = "number" id = "taxa" data-taxa>00.00</output>
+
+                        <label for = "valor-convertido">Resultado da conversão</label>
+                        <output id = "valor-convertido" type = "number" data-output>00.00</output>
+
+                        
+                    </fieldset>
+
+                    <fieldset class = "cadastro">
+
+                        <label for = "nomesobrenome"> Cadastro</label>
+                        <input class = "input-padrao" type = "text" id = "nomesobrenome" data-nome-sobrenome required placeholder = "Nome e Sobrenome">
+
+                        <button data-button-realizar>Realizar Operação</button>
+                    </fieldset>
+
+                <fieldset class = "tabela">
+
+                    <label id = "ultimas-operacoes" for = "operacoes">Últimas operações</label>
+
+                    <fieldset class = "filtros">
+                        <label for = "filtrocliente">Cliente</label>
+                        <select id = "filtrocliente" data-filtro-cliente></select>
+                   
+                        <label for = "filtrodata">Data</label>
+                        <select id = "filtrodata" data-filtro-data></select>
+
+                        <button id = "botao-filtro" data-button-filtrar>Filtrar</button>
+                    </fieldset> 
+
+                    <fieldset class = "somatorios">
+                        <label for = "valortotal">Valor total das operações (R$): </label>
+                        <output type = "number" id = "valortotal" data-valor-total>00.00</output>
+                    
+                        <label for = "taxatotal">Valor total das taxas (R$): </label>
+                        <output type = "number" id = "taxatotal" data-taxa-total>00.00</output>
+                    </fieldset> 
+
+                    <table id = "operacoes">
+
+                        <thead>
+                            <tr>
+                                <th>Nome do cliente</th>
+                                <th>Moeda de origem</th>
+                                <th>Moeda de destino</th>
+                                <th>Data da operação</th>
+                                <th>Valor original</th>
+                                <th>Valor convertido</th>
+                                <th>Taxa cobrada (R$)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody data-tabela-body>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </main>
+
+            <script src = "main.js"></script>
+        </body>
+    </html>
+</DOCTYPE>

@@ -1,0 +1,129 @@
+header, footer {
+    background-color: rgb(26, 0, 121)
+}
+header{
+    padding: 20px 10px 20px 8%;
+    align-items: center;
+}
+#titulo{
+    text-transform: uppercase;
+    font-family: 'Gugi', cursive;
+    margin-bottom: 0;
+    font-size: 50px;
+}
+#subtitulo{
+    margin-top: 0;
+    font-size: 18px;
+}
+header li, a{
+    text-decoration: none;
+    color: #f8f8f8
+}
+main{
+    margin-left: 8%;
+    padding: 10px 10px;
+}
+
+.menu-conversor, .custos{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.valor-entrada{
+    display:inline-block;
+    width: 100%;
+}
+.valor-entrada label{
+    font-size: 30px;
+    display: block;
+}
+.menu-conversor label{
+    font-size: 25px;
+    display: block;
+    text-align: left;
+}
+.moeda-origem, .moeda-destino{
+    width: 100%;
+    margin: 10px 0;
+}
+#botao-inverter{
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    font-size: 25px;
+    margin-right: 5%px;
+}
+.input-padrao{
+    font-size: 25px;
+    width: 30%;
+    padding-left: 5px;
+    font-weight: bold;
+}
+#valor-convertido, #taxa, #nomesobrenome{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.custos label, .cadastro label, #ultimas-operacoes {
+    font-size: 25px;
+    padding: 20px 0 0px;
+}
+.custos label, .cadastro label{
+    display: block;
+}
+#input-entrada{
+    width: 12%;
+}
+#nomesobrenome{
+    padding: 5px;
+}
+.cadastro button, #botao-filtro{
+    width: 12%;
+    padding: 5px 0;
+    font-size: 18px;
+    vertical-align: top;
+}
+.cadastro button, #botao-filtro, #botao-inverter{
+    background-color: rgb(26, 0, 121);
+    color: #f8f8f8;
+    transition: all 500ms;
+	cursor: pointer;
+}
+.cadastro button:hover, #botao-filtro:hover, #botao-inverter:hover{
+    background: rgb(18, 1, 82);
+	transform: scale(1.05);
+}
+#ultimas-operacoes{
+    display: inline-block;
+    width: 30%;
+}
+.filtros, .somatorios{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 5px 0px;
+}
+.filtros{
+    width: 40%;
+    text-align: left;
+}
+.somatorios{
+    width: 60%;
+}
+#botao-filtro{
+    width: 15%;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: auto;
+}
+table{
+	margin: 20px 0 40px;
+}
+thead{
+	background: rgb(26, 0, 121);
+	color: #f8f8f8;
+	font-weight: bold;
+}
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
